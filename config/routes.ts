@@ -18,6 +18,14 @@
 
 	///////////////////////////////////
 	// DEFAULT MENU
+
+	{
+		path: '/quan-li-cua-hang',
+		name: 'QuanLiCuaHang',
+		component: './QuanLiCuaHang',
+		icon: 'ShopOutlined',
+
+	},
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
