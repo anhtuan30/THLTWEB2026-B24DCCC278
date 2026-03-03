@@ -20,10 +20,24 @@
 	// DEFAULT MENU
 
 	{
-		path: '/quan-li-cua-hang',
-		name: 'QuanLiCuaHang',
-		component: './QuanLiCuaHang',
-		icon: 'ShopOutlined',
+		path: "/Quan-Li-Danh-Muc",
+		name: "Quản Lí Danh Mục",
+		component: './Bài 2/QuanLiDanhMuc',
+		icon: 'AppstoreOutlined',
+	},
+
+	{
+		path: "Quan-Li-Tien-Do",
+		name: "Quản Lí Tiến Độ",
+		component: './Bài 2/QuanLiTienDo',
+		icon: 'CheckCircleOutlined',
+	},
+
+	{
+		path: "Thiet-Lap-Muc-Tieu",
+		name: "Thiết Lập Mục Tiêu",
+		component: "./Bài 2/ThietLapMucTieu",
+		icon: 'SettingOutlined',
 
 	},
 	{
