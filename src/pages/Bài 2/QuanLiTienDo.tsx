@@ -1,7 +1,7 @@
-import {Table, Button, Modal} from 'antd';
+import {Table, Button, Modal, Form, message, Input} from 'antd';
 import { useState } from 'react';
 const QuanLiTienDo = () => {
-    const datasource = [
+    const [datasource, setDatasource] = useState([
         {
             tenMon: 'Toán',
             ngayGio: '7h30 - 9h30, 20/2/2026',
@@ -33,7 +33,8 @@ const QuanLiTienDo = () => {
             noiDungDaHoc: 'Giới thiệu về lý học',
             ghiChu: 'Cần ôn lại kiến thức về lý học cơ bản',
         },
-    ];
+    ]
+  );
 
 const columns = [
   {
@@ -74,34 +75,80 @@ const columns = [
   },
 ];
 
+const [form] = Form.useForm();
 const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
     setIsModalOpen(true);
-  };
+    form.resetFields();
+};
 
-  const handleOk = () => {
+const handleOk = () => {
+    form.validateFields().then((values) => {
+    setDatasource(prev => [...prev, values]);
+    message.success('Thêm lịch học thành công!');
     setIsModalOpen(false);
-  };
+    form.resetFields();
+    }).catch((info) => {
+    console.log('Validate Failed:', info);
+    });
+};
 
-  const handleCancel = () => {
+const handleCancel = () => {
     setIsModalOpen(false);
-  };
-
+    form.resetFields();
+};
 return (
 
     <div style={{ padding: '20px' }}>
         <h2>Quản lí tiến độ học tập</h2>
-        
-        
+        <>
     <Button type="primary" onClick={showModal} style={{marginBottom:'20px'}}>Thêm Lịch học</Button>
-    <Modal title="Basic Modal" visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+    <Modal title="Thêm Lịch học"visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <Form
+        form={form}
+        layout="vertical">
+          
+          <Form.Item
+          label="Tên môn"
+          name="tenMon"
+          rules={[{ required: true, message: 'Vui lòng nhập tên môn!' }]}>
+            <Input placeholder='Nhập tên môn' />
+          </Form.Item>
+          
+          <Form.Item
+          label="Ngày giờ"
+          name="ngayGio"
+          rules={[{ required: true, message: 'Vui lòng nhập ngày giờ!' }]}>
+            <Input placeholder='Nhập ngày giờ' />
+          </Form.Item>
+          
+          <Form.Item
+          label="Thời lượng học"
+          name="thoiLuongHoc"
+          rules={[{ required: true, message: 'Vui lòng nhập thời lượng học!' }]}>
+            <Input placeholder='Nhập thời lượng học' />
+          </Form.Item>
+          
+          <Form.Item
+          label="Nội dung đã học"
+          name="noiDungDaHoc"
+          rules={[{ required: true, message: 'Vui lòng nhập nội dung đã học!' }]}>
+            <Input placeholder='Nhập nội dung đã học'/>
+          </Form.Item>
+          
+          <Form.Item
+          label="Ghi chú"
+          name="ghiChu">
+            <Input placeholder='Nhập ghi chú'/>
+          </Form.Item>
+        
+        </Form>
     </Modal>
+    </>
     <Table dataSource={datasource} columns={columns} />
     </div>
+
 );
 };
 export default QuanLiTienDo;
