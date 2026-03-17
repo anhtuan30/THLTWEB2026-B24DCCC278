@@ -18,42 +18,32 @@
 
 	///////////////////////////////////
 	// DEFAULT MENU
-
 	{
-		path: "Oan-Tu-Ti",
-	    name: "Oẳn Tù Tì",
-	    component: './Bài 1_TH02/Oẳn Tù Tì',
-		icon: 'PlayCircleOutlined',
-
+		path: '/Quan-li-nhan-vien-va-dich-vu',
+		name: 'Quản lí nhân viên và dịch vụ',
+		component: './TH03/Quản lý nhân viên và dịch vụ',
+		icon: 'UserOutlined',
 	},
 	{
-		path: "Danh-Muc-Khoi-Kien-Thuc",
-		name: "Danh Mục Khối Kiến Thức",
-		component: './Bài 2_TH02/DanhMucKhoiKienThuc',
-		icon: 'AppstoreOutlined',
-
+		path:'/Quan-li-lich-hen',
+		name:'Quản lí lịch hẹn',
+		component:'./TH03/Quản lí lịch hẹn',
+		icon:'CalendarOutlined',
 	},
 	{
-		path: "Danh-Muc-Mon-Hoc",
-		name: "Danh Mục Môn Học",
-		component: './Bài 2_TH02/DanhMucMonHoc',
-		icon: 'BookOutlined',
+		path:'/Danh-gia-dich-vu-va-nhan-vien',
+		name:'Đánh giá dịch vụ và nhân viên',
+		component:'./TH03/Đánh giá dịch vụ và nhân viên',
+		icon:'StarOutlined',
 	},
-
 	{
-		path: "Quan-Ly-Cau-Hoi",
-		name: "Quản Lý Câu Hỏi",
-		component: './Bài 2_TH02/QuanLyCauHoi',
-		icon: 'QuestionOutlined',
+		path:'Thong-ke-va-bao-cao',
+		name:'Thống kê và báo cáo',
+		component: './TH03/Thống kê và báo cáo',
+		icon:'BarChartOutlined',
 	},
 
-	{
-		path: "Quan-Ly-De-Thi",
-		name: "Quản Lý Đề Thi",
-		component: './Bài 2_TH02/QuanLyDeThi',
-		icon: 'FileTextOutlined',
-	},
-
+	
 	
 	{
 		path: '/dashboard',
@@ -118,6 +108,7 @@
 	},
 	{
 		path: '/',
+
 	},
 	{
 		path: '/403',
