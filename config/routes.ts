@@ -19,6 +19,33 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
+		path: '/Quan-li-nhan-vien-va-dich-vu',
+		name: 'Quản lí nhân viên và dịch vụ',
+		component: './TH03/Quản lý nhân viên và dịch vụ',
+		icon: 'UserOutlined',
+	},
+	{
+		path:'/Quan-li-lich-hen',
+		name:'Quản lí lịch hẹn',
+		component:'./TH03/Quản lí lịch hẹn',
+		icon:'CalendarOutlined',
+	},
+	{
+		path:'/Danh-gia-dich-vu-va-nhan-vien',
+		name:'Đánh giá dịch vụ và nhân viên',
+		component:'./TH03/Đánh giá dịch vụ và nhân viên',
+		icon:'StarOutlined',
+	},
+	{
+		path:'Thong-ke-va-bao-cao',
+		name:'Thống kê và báo cáo',
+		component: './TH03/Thống kê và báo cáo',
+		icon:'BarChartOutlined',
+	},
+
+	
+	
+	{
 		path: '/dashboard',
 		name: 'Dashboard',
 		component: './TrangChu',
@@ -81,6 +108,7 @@
 	},
 	{
 		path: '/',
+
 	},
 	{
 		path: '/403',
