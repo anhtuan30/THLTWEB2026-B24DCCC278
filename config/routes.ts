@@ -19,6 +19,33 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
+		path: '/danh-sach-CLB',
+		name:'Danh Sách CLB',
+		component: './TH05/Danh sách CLB',
+		icon: 'UnorderedListOutlined',
+	},
+	{
+		path:'/quan-li-don-dang-ki-thanh-vien',
+		name:'Quản Lí Đơn Đăng Kí Thành Viên',
+		component:'./TH05/Quản lí đơn đăng kí thành viên',
+		icon:'FormOutlined',
+	},
+	{
+		path:'/quan-li-thanh-vien-CLB',
+		name:'Quản Lí Thành Viên CLB',
+		component:'./TH05/Quản lí thành viên CLB',
+		icon:'UserOutlined',
+	},
+	{
+		path:'/bao-cao-thong-ke',
+		name:'Báo Cáo Thống Kê',
+		component:'./TH05/Báo cáo và thống kê',
+		icon:'BarChartOutlined',
+	},
+
+	
+	
+	{
 		path: '/dashboard',
 		name: 'Dashboard',
 		component: './TrangChu',
@@ -81,6 +108,7 @@
 	},
 	{
 		path: '/',
+
 	},
 	{
 		path: '/403',
