@@ -19,6 +19,44 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
+		path:'Quan-li-so-van-bang',
+		name:'Quản lí sổ văn bằng',
+		component:'./TH04/Quản lí sổ văn bằng',
+		icon:'FileTextOutlined',
+	},
+
+	{
+		path:'Quan-li-quyet-dinh-van-bang',
+		name:'Quản lí quyết định văn bằng',
+		component:'./TH04/Quản lí quyết định văn bằng',
+		icon:'FileDoneOutlined',
+	},
+
+	{
+		path:'Cau-hinh-so-van-bang',
+		name:'Cấu hình sổ văn bằng',
+		component:'./TH04/Cấu hình sổ văn bằng',
+		icon:'SettingOutlined',
+	},
+
+	{
+		path:'Thong-tin-van-bang',
+		name:'Thông tin văn bằng',
+		component:'./TH04/Thông tin văn bằng',
+		icon:'InfoCircleOutlined',
+	},
+
+	{
+		path:'Tra-cuu-van-bang',
+		name:'Tra cứu văn bằng',
+		component:'./TH04/Tra cứu văn bằng',
+		icon:'SearchOutlined',
+	},
+
+
+	
+	
+	{
 		path: '/dashboard',
 		name: 'Dashboard',
 		component: './TrangChu',
@@ -81,6 +119,7 @@
 	},
 	{
 		path: '/',
+
 	},
 	{
 		path: '/403',
