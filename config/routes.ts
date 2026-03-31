@@ -19,40 +19,29 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
-		path:'Quan-li-so-van-bang',
-		name:'Quản lí sổ văn bằng',
-		component:'./TH04/Quản lí sổ văn bằng',
-		icon:'FileTextOutlined',
+		path: '/danh-sach-CLB',
+		name:'Danh Sách CLB',
+		component: './TH05/Danh sách CLB',
+		icon: 'UnorderedListOutlined',
 	},
-
 	{
-		path:'Quan-li-quyet-dinh-van-bang',
-		name:'Quản lí quyết định văn bằng',
-		component:'./TH04/Quản lí quyết định văn bằng',
-		icon:'FileDoneOutlined',
+		path:'/quan-li-don-dang-ki-thanh-vien',
+		name:'Quản Lí Đơn Đăng Kí Thành Viên',
+		component:'./TH05/Quản lí đơn đăng kí thành viên',
+		icon:'FormOutlined',
 	},
-
 	{
-		path:'Cau-hinh-so-van-bang',
-		name:'Cấu hình sổ văn bằng',
-		component:'./TH04/Cấu hình sổ văn bằng',
-		icon:'SettingOutlined',
+		path:'/quan-li-thanh-vien-CLB',
+		name:'Quản Lí Thành Viên CLB',
+		component:'./TH05/Quản lí thành viên CLB',
+		icon:'UserOutlined',
 	},
-
 	{
-		path:'Thong-tin-van-bang',
-		name:'Thông tin văn bằng',
-		component:'./TH04/Thông tin văn bằng',
-		icon:'InfoCircleOutlined',
+		path:'/bao-cao-thong-ke',
+		name:'Báo Cáo Thống Kê',
+		component:'./TH05/Báo cáo và thống kê',
+		icon:'BarChartOutlined',
 	},
-
-	{
-		path:'Tra-cuu-van-bang',
-		name:'Tra cứu văn bằng',
-		component:'./TH04/Tra cứu văn bằng',
-		icon:'SearchOutlined',
-	},
-
 
 	
 	
