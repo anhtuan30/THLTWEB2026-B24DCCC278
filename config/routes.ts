@@ -19,29 +19,40 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
-		path: '/Quan-li-nhan-vien-va-dich-vu',
-		name: 'Quản lí nhân viên và dịch vụ',
-		component: './TH03/Quản lý nhân viên và dịch vụ',
-		icon: 'UserOutlined',
+		path:'Quan-li-so-van-bang',
+		name:'Quản lí sổ văn bằng',
+		component:'./TH04/Quản lí sổ văn bằng',
+		icon:'FileTextOutlined',
 	},
+
 	{
-		path:'/Quan-li-lich-hen',
-		name:'Quản lí lịch hẹn',
-		component:'./TH03/Quản lí lịch hẹn',
-		icon:'CalendarOutlined',
+		path:'Quan-li-quyet-dinh-van-bang',
+		name:'Quản lí quyết định văn bằng',
+		component:'./TH04/Quản lí quyết định văn bằng',
+		icon:'FileDoneOutlined',
 	},
+
 	{
-		path:'/Danh-gia-dich-vu-va-nhan-vien',
-		name:'Đánh giá dịch vụ và nhân viên',
-		component:'./TH03/Đánh giá dịch vụ và nhân viên',
-		icon:'StarOutlined',
+		path:'Cau-hinh-so-van-bang',
+		name:'Cấu hình sổ văn bằng',
+		component:'./TH04/Cấu hình sổ văn bằng',
+		icon:'SettingOutlined',
 	},
+
 	{
-		path:'Thong-ke-va-bao-cao',
-		name:'Thống kê và báo cáo',
-		component: './TH03/Thống kê và báo cáo',
-		icon:'BarChartOutlined',
+		path:'Thong-tin-van-bang',
+		name:'Thông tin văn bằng',
+		component:'./TH04/Thông tin văn bằng',
+		icon:'InfoCircleOutlined',
 	},
+
+	{
+		path:'Tra-cuu-van-bang',
+		name:'Tra cứu văn bằng',
+		component:'./TH04/Tra cứu văn bằng',
+		icon:'SearchOutlined',
+	},
+
 
 	
 	
