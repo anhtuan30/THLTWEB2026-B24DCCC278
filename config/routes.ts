@@ -19,28 +19,31 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
-		path: '/danh-sach-CLB',
-		name:'Danh Sách CLB',
-		component: './TH05/Danh sách CLB',
-		icon: 'UnorderedListOutlined',
+		path:'/Game',
+		name: 'Game',
+		icon: 'PlayCircleOutlined',
+		component: './TH01/Bài1/Game',
 	},
+
 	{
-		path:'/quan-li-don-dang-ki-thanh-vien',
-		name:'Quản Lí Đơn Đăng Kí Thành Viên',
-		component:'./TH05/Quản lí đơn đăng kí thành viên',
-		icon:'FormOutlined',
+		path:'/Quan-li-danh-muc-mon-hoc',
+		name: 'Quản lí danh mục môn học',
+		icon: 'TableOutlined',
+		component: './TH01/Bài2/Quản lý danh mục môn học',
 	},
+
 	{
-		path:'/quan-li-thanh-vien-CLB',
-		name:'Quản Lí Thành Viên CLB',
-		component:'./TH05/Quản lí thành viên CLB',
-		icon:'UserOutlined',
+		path:'Quan-li-tien-do-hoc-tap',
+		name: 'Quản lí tiến độ học tập',
+		icon: 'BarChartOutlined',
+		component: './TH01/Bài2/Quản lý tiến độ học tập',
 	},
+
 	{
-		path:'/bao-cao-thong-ke',
-		name:'Báo Cáo Thống Kê',
-		component:'./TH05/Báo cáo và thống kê',
-		icon:'BarChartOutlined',
+		path:'Thiet-lap-muc-tieu',
+		name: 'Thiết lập mục tiêu',
+		icon: 'LineChartOutlined',
+		component: './TH01/Bài2/Thiết lập mục tiêu học tập hàng tháng',
 	},
 
 	
