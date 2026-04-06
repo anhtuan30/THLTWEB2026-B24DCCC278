@@ -18,6 +18,28 @@
 
 	///////////////////////////////////
 	// DEFAULT MENU
+
+	{
+		path: "/Quan-Li-Danh-Muc",
+		name: "Quản Lí Danh Mục",
+		component: './Bài 2/QuanLiDanhMuc',
+		icon: 'MenuFoldOutlined',
+	},
+
+	{
+		path: "Quan-Li-Tien-Do",
+		name: "Quản Lí Tiến Độ",
+		component: './Bài 2/QuanLiTienDo',
+		icon: 'CheckOutlined',
+	},
+
+	{
+		path: "Thiet-Lap-Muc-Tieu",
+		name: "Thiết Lập Mục Tiêu",
+		component: "./Bài 2/ThietLapMucTieu",
+		icon: 'LineChartOutlined',
+
+	},
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
