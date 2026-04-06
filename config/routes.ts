@@ -18,6 +18,43 @@
 
 	///////////////////////////////////
 	// DEFAULT MENU
+
+	{
+		path: "Oan-Tu-Ti",
+	    name: "Oẳn Tù Tì",
+	    component: './Bài 1_TH02/Oẳn Tù Tì',
+		icon: 'PlayCircleOutlined',
+
+	},
+	{
+		path: "Danh-Muc-Khoi-Kien-Thuc",
+		name: "Danh Mục Khối Kiến Thức",
+		component: './Bài 2_TH02/DanhMucKhoiKienThuc',
+		icon: 'AppstoreOutlined',
+
+	},
+	{
+		path: "Danh-Muc-Mon-Hoc",
+		name: "Danh Mục Môn Học",
+		component: './Bài 2_TH02/DanhMucMonHoc',
+		icon: 'BookOutlined',
+	},
+
+	{
+		path: "Quan-Ly-Cau-Hoi",
+		name: "Quản Lý Câu Hỏi",
+		component: './Bài 2_TH02/QuanLyCauHoi',
+		icon: 'QuestionOutlined',
+	},
+
+	{
+		path: "Quan-Ly-De-Thi",
+		name: "Quản Lý Đề Thi",
+		component: './Bài 2_TH02/QuanLyDeThi',
+		icon: 'FileTextOutlined',
+	},
+
+	
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
