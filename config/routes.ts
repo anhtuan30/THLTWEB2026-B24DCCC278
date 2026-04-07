@@ -19,32 +19,35 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
-		path:'/Game',
-		name: 'Game',
-		icon: 'PlayCircleOutlined',
-		component: './TH01/Bài1/Game',
+		path:'Trang-chu',
+		name:'Trang chủ - Khám phá điểm đến',
+		component:'./TH06/Trang chủ',
+		icon:'HomeOutlined',
+	},
+	
+	{
+		path:'Tao-lich-trinh',
+		name:'Tạo lịch trình',
+		component:'./TH06/Tạo lịch trình',
+		icon:'CalendarOutlined',
+	},
+	
+	{
+		path:'Quan-li-ngan-sach',
+		name:'Quản lí ngân sách',
+		component:'./TH06/Quản lí ngân sách',
+		icon:'DollarOutlined',
 	},
 
 	{
-		path:'/Quan-li-danh-muc-mon-hoc',
-		name: 'Quản lí danh mục môn học',
-		icon: 'TableOutlined',
-		component: './TH01/Bài2/Quản lý danh mục môn học',
+		path:'Trang-quan-tri',
+		name:'Trang quản trị',
+		component:'./TH06/Trang quản trị',
+		icon:'SettingOutlined',
 	},
 
-	{
-		path:'Quan-li-tien-do-hoc-tap',
-		name: 'Quản lí tiến độ học tập',
-		icon: 'BarChartOutlined',
-		component: './TH01/Bài2/Quản lý tiến độ học tập',
-	},
 
-	{
-		path:'Thiet-lap-muc-tieu',
-		name: 'Thiết lập mục tiêu',
-		icon: 'LineChartOutlined',
-		component: './TH01/Bài2/Thiết lập mục tiêu học tập hàng tháng',
-	},
+
 
 	
 	
