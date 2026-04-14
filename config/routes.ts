@@ -18,11 +18,7 @@
 
 	///////////////////////////////////
 	// DEFAULT MENU
-	{
-		path: '/Quan-li-don-hang-va-san-pham',
-		name: 'Quản Lí Danh Mục Môn Học',
-		component: './BT02/Quản lý Đơn hàng và Sản phẩm',
-	},
+
 	{
 		path:'Quan-li-khoa-hoc',
 		name:'Quản Lí Khóa Học',
