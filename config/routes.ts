@@ -19,6 +19,39 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
+		path:'Trang-chu',
+		name:'Trang chủ - Khám phá điểm đến',
+		component:'./TH06/Trang chủ',
+		icon:'HomeOutlined',
+	},
+	
+	{
+		path:'Tao-lich-trinh',
+		name:'Tạo lịch trình',
+		component:'./TH06/Tạo lịch trình',
+		icon:'CalendarOutlined',
+	},
+	
+	{
+		path:'Quan-li-ngan-sach',
+		name:'Quản lí ngân sách',
+		component:'./TH06/Quản lí ngân sách',
+		icon:'DollarOutlined',
+	},
+
+	{
+		path:'Trang-quan-tri',
+		name:'Trang quản trị',
+		component:'./TH06/Trang quản trị',
+		icon:'SettingOutlined',
+	},
+
+
+
+
+	
+	
+	{
 		path: '/dashboard',
 		name: 'Dashboard',
 		component: './TrangChu',
@@ -81,6 +114,7 @@
 	},
 	{
 		path: '/',
+
 	},
 	{
 		path: '/403',
