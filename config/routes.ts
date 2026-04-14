@@ -18,6 +18,13 @@
 
 	///////////////////////////////////
 	// DEFAULT MENU
+
+	{
+		path:'Quan-li-khoa-hoc',
+		name:'Quản Lí Khóa Học',
+		component:'./Kiểm Tra Giữa Kì/Quản lí khóa học',
+		icon:'SolutionOutlined',
+	},
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
@@ -81,6 +88,7 @@
 	},
 	{
 		path: '/',
+
 	},
 	{
 		path: '/403',
