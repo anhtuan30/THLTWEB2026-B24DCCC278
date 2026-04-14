@@ -19,38 +19,16 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
-		path:'Trang-chu',
-		name:'Trang chủ - Khám phá điểm đến',
-		component:'./TH06/Trang chủ',
-		icon:'HomeOutlined',
+		path: '/Quan-li-don-hang-va-san-pham',
+		name: 'Quản Lí Danh Mục Môn Học',
+		component: './BT02/Quản lý Đơn hàng và Sản phẩm',
 	},
-	
 	{
-		path:'Tao-lich-trinh',
-		name:'Tạo lịch trình',
-		component:'./TH06/Tạo lịch trình',
-		icon:'CalendarOutlined',
+		path:'Quan-li-khoa-hoc',
+		name:'Quản Lí Khóa Học',
+		component:'./Kiểm Tra Giữa Kì/Quản lí khóa học',
+		icon:'SolutionOutlined',
 	},
-	
-	{
-		path:'Quan-li-ngan-sach',
-		name:'Quản lí ngân sách',
-		component:'./TH06/Quản lí ngân sách',
-		icon:'DollarOutlined',
-	},
-
-	{
-		path:'Trang-quan-tri',
-		name:'Trang quản trị',
-		component:'./TH06/Trang quản trị',
-		icon:'SettingOutlined',
-	},
-
-
-
-
-	
-	
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
