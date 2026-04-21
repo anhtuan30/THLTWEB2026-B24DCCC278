@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import { Table, Button, Space, Modal, Input, InputNumber, Form, message, Select } from 'antd';
+import { Table, Button, Space, Modal, Input, InputNumber, Form, message, Select, Popconfirm } from 'antd';
 import { PlusOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
 import TinyEditor from '../../components/TinyEditor';
-
-
 
 interface Khoahoc {
     id: number,
@@ -80,13 +78,13 @@ const QuanLiKhoaHoc = () =>{
         { value: 'Tạm dừng', label: 'Tạm dừng' },
     ];
 
-const giangVienOptions = [
-    { value: 'Nguyễn Văn A', label: 'Nguyễn Văn A' },
-    { value: 'Trần Thị B', label: 'Trần Thị B' },
-    { value: 'Lê Văn C', label: 'Lê Văn C' },
-    { value: 'Phạm Thị D', label: 'Phạm Thị D' },
-    { value: 'Hoàng Văn E', label: 'Hoàng Văn E' },
-];
+    const giangVienOptions = [
+        { value: 'Nguyễn Văn A', label: 'Nguyễn Văn A' },
+        { value: 'Trần Thị B', label: 'Trần Thị B' },
+        { value: 'Lê Văn C', label: 'Lê Văn C' },
+        { value: 'Phạm Thị D', label: 'Phạm Thị D' },
+        { value: 'Hoàng Văn E', label: 'Hoàng Văn E' },
+    ];
 
     const handleAdd =() => {
         setIsModalOpen(true);
@@ -118,7 +116,9 @@ const giangVienOptions = [
                     ),
                 );
                 message.success('Cập nhật thành công!');
-            } else {
+            }
+            
+            else {
                 const newKhoaHoc: Khoahoc = {
                     id: Number(values.id),
                     tenKhoaHoc: values.tenKhoaHoc,
@@ -152,15 +152,6 @@ const giangVienOptions = [
             message.warning('Chỉ được xóa khóa học chưa có học viên!');
             return;
         }
-
-        Modal.confirm({
-            title: 'Xác nhận xóa',
-            content: 'Bạn có chắc chắn muốn xóa khóa học này không?',
-            onOk: () => {
-                setDsKhoaHoc(dsKhoaHoc.filter((item) => item.id !== id));
-                message.info('Xóa thành công!');
-            },
-        });
     };
     const columns =[
         {
@@ -201,7 +192,15 @@ const giangVienOptions = [
             render:(text: any, record: Khoahoc) =>(
                 <Space>
                     <Button type='default' icon={<EditOutlined/>} onClick={() => handleEdit(record)}>Sửa</Button>
-                    <Button type='primary' icon={<DeleteOutlined/>} onClick={() => handleDelete(record.id)}>Xóa</Button>
+                    <Popconfirm
+                        title="Bạn có chắc chắn muốn xóa khóa học này?"
+                        onConfirm={() => handleDelete(record.id)}
+                        okText="Có"
+                        cancelText="Không"
+                    >
+                        <Button type='primary' danger icon={<DeleteOutlined/>}>Xóa</Button>
+                    </Popconfirm>
+    
                 </Space>
             ),
         }

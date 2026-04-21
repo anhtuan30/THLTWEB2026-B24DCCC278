@@ -18,17 +18,44 @@
 
 	///////////////////////////////////
 	// DEFAULT MENU
+
 	{
-		path: '/Quan-li-don-hang-va-san-pham',
-		name: 'Quản Lí Danh Mục Môn Học',
-		component: './BT02/Quản lý Đơn hàng và Sản phẩm',
+		path:'trang-chu',
+		name:'Trang chủ',
+		component:'./TH07/Trang chủ',
+		icon:'HomeOutlined',
 	},
+
 	{
-		path:'Quan-li-khoa-hoc',
-		name:'Quản Lí Khóa Học',
-		component:'./Kiểm Tra Giữa Kì/Quản lí khóa học',
-		icon:'SolutionOutlined',
+		path:'trang-chi-tiet-bai-viet',
+		name:'Trang chi tiết bài viết',
+		component:'./TH07/Trang chi tiết bài viết',
+		icon:'FileTextOutlined',
 	},
+
+	{
+		path:'trang-gioi-thieu',
+		name:'Trang giới thiệu',
+		component:'./TH07/Trang giới thiệu',
+		icon:'InfoCircleOutlined',
+	},
+
+	{
+		path:'quan-li-bai-viet',
+		name:'Quản lí bài viết',
+		component:'./TH07/Quản lí bài viết',
+		icon:'EditOutlined',
+	},
+
+	{
+		path:'quan-li-the',
+		name:'Quản lí thẻ',
+		component:'./TH07/Quản lí thẻ',
+		icon:'CreditCardOutlined',
+	},
+
+
+	
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
