@@ -18,42 +18,40 @@
 
 	///////////////////////////////////
 	// DEFAULT MENU
-
 	{
-		path:'trang-chu',
-		name:'Trang chủ',
-		component:'./TH07/Trang chủ',
-		icon:'HomeOutlined',
+		path:'/trang-chu',
+		name:'Trang giao diện',
+		component:'./TH08/Dashboard',
+		icon:'DashboardOutlined',
 	},
 
 	{
-		path:'trang-chi-tiet-bai-viet',
-		name:'Trang chi tiết bài viết',
-		component:'./TH07/Trang chi tiết bài viết',
-		icon:'FileTextOutlined',
+		path:'/Nhat-ki-tap-luyen',
+		name:'Nhật kí tập luyện',
+		component:'./TH08/Nhatkitapluyen',
+		icon:'BookOutlined',
 	},
 
 	{
-		path:'trang-gioi-thieu',
-		name:'Trang giới thiệu',
-		component:'./TH07/Trang giới thiệu',
-		icon:'InfoCircleOutlined',
+		path:'/Nhat-ki-chi-so-suc-khoe',
+		name:'Nhật ký chỉ số sức khỏe',
+		component:'./TH08/Nhatkichisosuckhoe',
+		icon:'HeartOutlined',
 	},
 
 	{
-		path:'quan-li-bai-viet',
-		name:'Quản lí bài viết',
-		component:'./TH07/Quản lí bài viết',
-		icon:'EditOutlined',
+		path:'/Quan-li-muc-tieu',
+		name:'Quản lí mục tiêu',
+		component:'./TH08/Quanlimuctieu',
+		icon:'CheckCircleOutlined',
 	},
 
 	{
-		path:'quan-li-the',
-		name:'Quản lí thẻ',
-		component:'./TH07/Quản lí thẻ',
-		icon:'CreditCardOutlined',
+		path:'/Thu-vien-bai-tap',
+		name:'Thư viện bài tập',
+		component:'./TH08/Thuvienbaitap',
+		icon:'AppstoreOutlined',
 	},
-
 
 	
 	{

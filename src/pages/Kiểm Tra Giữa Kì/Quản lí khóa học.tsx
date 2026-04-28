@@ -152,6 +152,8 @@ const QuanLiKhoaHoc = () =>{
             message.warning('Chỉ được xóa khóa học chưa có học viên!');
             return;
         }
+        setDsKhoaHoc(dsKhoaHoc.filter((item) => item.id !== id));
+        message.success('Xóa khóa học thành công!');
     };
     const columns =[
         {
@@ -200,7 +202,6 @@ const QuanLiKhoaHoc = () =>{
                     >
                         <Button type='primary' danger icon={<DeleteOutlined/>}>Xóa</Button>
                     </Popconfirm>
-    
                 </Space>
             ),
         }
