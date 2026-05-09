@@ -19,38 +19,24 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
-		path:'/trang-chu',
-		name:'Trang giao diện',
-		component:'./TH08/Dashboard',
-		icon:'DashboardOutlined',
+		path:'/trang-dashboard',
+		name: 'Trang Dashboard',
+		component: './TH09/Trangdashboard',
+		icon: 'CheckCircleOutlined',
 	},
 
 	{
-		path:'/Nhat-ki-tap-luyen',
-		name:'Nhật kí tập luyện',
-		component:'./TH08/Nhatkitapluyen',
-		icon:'BookOutlined',
+		path:'/trang-Kanbanboard',
+		name: 'Trang Kanbanboard',
+		component:'./TH09/TrangKanbanboard',
+		icon:'AppstoreOutlined'
 	},
 
 	{
-		path:'/Nhat-ki-chi-so-suc-khoe',
-		name:'Nhật ký chỉ số sức khỏe',
-		component:'./TH08/Nhatkichisosuckhoe',
-		icon:'HeartOutlined',
-	},
-
-	{
-		path:'/Quan-li-muc-tieu',
-		name:'Quản lí mục tiêu',
-		component:'./TH08/Quanlimuctieu',
-		icon:'CheckCircleOutlined',
-	},
-
-	{
-		path:'/Thu-vien-bai-tap',
-		name:'Thư viện bài tập',
-		component:'./TH08/Thuvienbaitap',
-		icon:'AppstoreOutlined',
+		path:'/trang-task',
+		name:'Trang Danh sách task',
+		component:'./TH09/TrangDanhsachtask',
+		icon:'UnorderedListOutlined'
 	},
 
 	
