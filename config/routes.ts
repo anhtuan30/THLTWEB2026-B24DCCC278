@@ -19,6 +19,28 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
+		path:'/trang-dashboard',
+		name: 'Trang Dashboard',
+		component: './TH09/Trangdashboard',
+		icon: 'CheckCircleOutlined',
+	},
+
+	{
+		path:'/trang-Kanbanboard',
+		name: 'Trang Kanbanboard',
+		component:'./TH09/TrangKanbanboard',
+		icon:'AppstoreOutlined'
+	},
+
+	{
+		path:'/trang-task',
+		name:'Trang Danh sách task',
+		component:'./TH09/TrangDanhsachtask',
+		icon:'UnorderedListOutlined'
+	},
+
+	
+	{
 		path: '/dashboard',
 		name: 'Dashboard',
 		component: './TrangChu',
@@ -81,6 +103,7 @@
 	},
 	{
 		path: '/',
+
 	},
 	{
 		path: '/403',
